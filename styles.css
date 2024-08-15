@@ -1,0 +1,389 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: #fff;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffdd57;
+}
+
+.section {
+    padding: 100px 20px; /* Padding to account for the fixed header */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro {
+    text-align: center;
+    padding-top: 80px; /* Extra padding to ensure content isn't hidden behind the nav bar */
+}
+.intro.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.enhanced-pic {
+    flex: 1;
+    margin-right: 40px;
+}
+
+.intro .enhanced-pic {
+    width: 350px;
+    height: 350px;
+    border-radius: 5%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 5px solid #0099ff;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    float: left;
+}
+
+.intro h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.intro p{
+    font-size: 22px;
+    line-height: 1.6;
+    flex: 2;
+    text-align: justify;
+    margin: 0;
+
+}
+@media (max-width: 768px) 
+{
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .enhanced-pic {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .enhanced-pic img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .intro {
+        text-align: justify;
+    }
+}
+
+.graphics {
+    /* You can add custom graphics, icons, or animations here */
+    width: 100px;
+    height: 100px;
+    background-color: #ffdd57;
+    border-radius: 50%;
+    margin: 20px auto;
+}
+
+.intro .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 30px;
+    color: #fff;
+    background-color: #ff5a5f;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.intro .btn:hover {
+    background-color: #ff7e79;
+}
+
+.about-me, .project-gallery, .contact-me {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    min-width: 250px;
+    margin: 20px 0;
+}
+
+.contact-me form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+/* General Section Styles */
+section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 36px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+h2::after {
+    content: "";
+    width: 80px;
+    height: 4px;
+    background: #25a3f7;
+    display: block;
+    margin: 10px auto 0;
+}
+
+.section-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.section-content img {
+    flex: 1;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+/* Image Styling with Border */
+img {
+    border: 5px solid #0099ff; /* Adjust the color and width of the border */
+    border-radius: 10px;       /* Rounded corners (optional) */
+    padding: 5px;              /* Space between the image and the border */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for a 3D effect */
+}
+
+
+.section-text {
+    flex: 2;
+    text-align: justify;
+    line-height: 1.8;
+    font-size: 18px;
+    color: #fffafa;
+}
+
+.section-text h3 {
+    font-size: 50px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.section-text p {
+    margin-bottom: 20px;
+}
+
+.education-experience-item {
+    margin-bottom: 40px;
+}
+
+.education-experience-item h4 {
+    font-size: 22px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.education-experience-item p {
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.education-experience-item span {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .section-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section-text {
+        margin-top: 20px;
+    }
+
+    .section-content img {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}
+.skill-item img {
+    flex: 1;
+    max-width: 150px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.project-gallery h1{
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.project img{
+    flex: 1;
+    max-width: 230px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.github-link img{
+    flex: 1;
+    max-width: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.project h3{
+    font-size: 25px;
+    color: #0b0b0b;
+    margin-bottom: 20px;
+}
+.skill-text h3{
+    font-size: 25px;
+    color: #0b0b0b;
+    margin-bottom: 20px;
+}
+.contact-me {
+    padding: 30px 50px;
+    background-color: #898989;
+    text-align: center;
+}
+
+.contact-me h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+}
+
+.contact-form {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.form-fields {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping to the next line if needed */
+    gap: 20px; /* Space between fields */
+}
+
+.form-fields > div {
+    flex: 3;
+    min-width: 300px; /* Minimum width for each field */
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding-left:0px;
+    margin-right: 50px;
+    border: 5px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    height: 100px; /* Adjust height as needed */
+}
+
+.contact-form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 14px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    display: block;
+    margin: 20px auto 0; /* Center submit button */
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+.linkedin-link img{
+    flex: 1;
+    max-width: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
